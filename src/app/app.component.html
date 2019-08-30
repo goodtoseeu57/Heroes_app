@@ -1,3 +1,17 @@
 <h1>{{title}} </h1>
+<!-- this how you navigate through the compononents
 
-<app-heroes></app-heroes>
+Ideally, users should be able to click a link to navigate rather than pasting a route URL into the address bar.
+
+-->
+<nav>
+  <a routerLink="/heroes">Heroes</a>
+
+</nav>
+
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+</nav>
+
+<router-outlet></router-outlet>
+<app-messages></app-messages>
