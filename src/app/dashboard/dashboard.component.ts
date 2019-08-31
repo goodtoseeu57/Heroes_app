@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HeroService} from '../hero.service';
 import {Hero} from '../hero';
+import {deserializeSummaries} from "@angular/compiler/src/aot/summary_serializer";
 
 @Component({
   selector: 'app-dashboard',
