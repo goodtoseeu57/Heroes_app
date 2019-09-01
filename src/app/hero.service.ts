@@ -25,3 +25,4 @@ getHeroes(): Observable<Hero[]> {
   return of(HEROES.find(hero => hero.id === id));
 }
 }
+/ one comment
