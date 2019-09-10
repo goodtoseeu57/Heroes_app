@@ -34,8 +34,12 @@ Route parameters are always strings. The JavaScript (+) operator converts the st
     this.heroService.getHero(id).subscribe(hero => this.hero = hero);
 
   }
+  // how to get back from your location in angular
   goBack(): void {
     this.location.back();
+  }
 
+  save(): void {
+    this.heroService.updateHero(this.hero).subscribe(() => this.goBack());
   }
 }
