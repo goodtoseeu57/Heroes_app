@@ -34,7 +34,7 @@ export class HeroSearchComponent implements OnInit {
 
       distinctUntilChanged(),
       switchMap((term: string) => this.heroService.searchHeroes(term)),
-    
+
 
     );
   }
